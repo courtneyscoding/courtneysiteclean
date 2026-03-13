@@ -1,0 +1,8 @@
+[build]
+publish = "Courtney's Frontend"
+functions = "netlify/functions"
+
+[[redirects]]
+from = "/chat"
+to = "/.netlify/functions/chat"
+status = 200

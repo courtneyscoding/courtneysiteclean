@@ -1,23 +1,13 @@
 # Courtney Site (Clean Restart)
 
-This repo contains:
+This repo now runs as a single Netlify app:
 
-- `courtney-backend/` (Node + Express API for Claude)
-- `Courtney's Frontend/` (single-page HTML frontend)
+- `Courtney's Frontend/` (website UI)
+- `netlify/functions/chat.js` (backend API for Claude)
 
-## Backend env vars (Railway)
+No Railway setup is required.
 
-Set these in Railway Variables:
+## Required Netlify environment variable
 
 - `CLAUDE_API_KEY` = your real Claude API key
-- `CLAUDE_MODEL` = `claude-3-5-sonnet-latest` (optional)
-
-## Local backend run
-
-```bash
-cd courtney-backend
-npm install
-cp .env.example .env
-# add your real key to .env
-npm start
-```
+- Optional: `CLAUDE_MODEL` (defaults to `claude-3-5-sonnet-latest`)
